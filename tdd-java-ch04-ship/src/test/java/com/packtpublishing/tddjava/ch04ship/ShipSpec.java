@@ -38,14 +38,30 @@ public class ShipSpec {
     }
 
     public void whenTurnLeftThenTurnLeft(){
-        Direction expectedDirection =location.getDirection().turnLeft();
+        Location expected=location.copy();
+        Direction expectedDirection =expected.getDirection().turnLeft();
         ship.turnLeft();
         assertEquals(expectedDirection,ship.getDirection());
     }
 
     public void whenTurnRightThenTurnRight(){
-        Direction expectedDirection=location.getDirection().turnRight();
+        Location expected=location.copy();
+        Direction expectedDirection=expected.getDirection().turnRight();
         ship.turnRight();
         assertEquals(expectedDirection,ship.getDirection());
+    }
+
+    public void whenCommandsAreReceivedThenExecuteTheCommands(){
+        
+        Location expected=location.copy();
+        expected.turnRight();
+        expected.forward();
+        expected.turnLeft();
+        expected.backward();
+        ship.move("rflb");
+        assertEquals(ship.getLocation(),expected);
+
+
+
     }
 }
