@@ -3,3 +3,6 @@
 3. @Test
 4. ExpectedException
 5. Assert
+	5.1 assertEquals
+	5.2 assertNotEquals
+	5.3 assertArrayEquals

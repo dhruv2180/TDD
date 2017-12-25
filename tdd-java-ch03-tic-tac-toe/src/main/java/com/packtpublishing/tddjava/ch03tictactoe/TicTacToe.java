@@ -6,8 +6,18 @@ package com.packtpublishing.tddjava.ch03tictactoe;
 public class TicTacToe {
 
     boolean board[][];
+
+    enum player{
+        X,
+        Y
+    }
+
+    private player nextPlayer;
+
     public TicTacToe(){
         board=new boolean[3][3];
+        nextPlayer=player.X;
+
     }
 
     /*
@@ -38,6 +48,11 @@ public class TicTacToe {
 
     public void updateBoard(int x,int y){
         board[x-1][y-1]=true;
+        if(nextPlayer.equals(player.X)){
+            nextPlayer=player.Y;
+        }else{
+            nextPlayer=player.X;
+        }
     }
 
     /*
@@ -48,5 +63,13 @@ public class TicTacToe {
             return true;
         }
         return false;
+    }
+
+    /*
+     * This method return the next player that is expected to move
+     */
+
+    public player getNextPlayer(){
+        return nextPlayer;
     }
 }
