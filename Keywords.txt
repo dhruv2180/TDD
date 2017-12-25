@@ -9,3 +9,30 @@
 6. Red green refactor model
 7. Jacoco
 8. Code coverage tools
+
+——————————————
+
+9.  TestNG
+	9.1 @Test (class level)
+	9.2 @BeforeSuite
+	9.3 @BeforeTest
+	9.4 @BeforeGroups
+	9.5 @AferGroups
+	9.6 @AfterTest
+	9.7 @AfterSuite
+	9.8 @BeforeClass
+	9.9 @AfterClass
+	9.10 @BeforeMethod
+	9.11 @AfterMethod
+	9.12 @Test(enable =false)
+	9.13 @Test(expectedException= someclass.class)
+
+
+10. Extreme Programming
+11. Integration tests
+12. Functional tests
+13. Acceptance tests
+14. Test doubles
+15. KISS : Keep it simple stupid
+
+	
