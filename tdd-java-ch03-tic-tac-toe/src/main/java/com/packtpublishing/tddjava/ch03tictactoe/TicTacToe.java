@@ -11,9 +11,7 @@ public class TicTacToe {
 
     public void play(int x,int y){
 
-        if(x >3 ){
-            throw new RuntimeException();
-        }
+
 
     }
 }
