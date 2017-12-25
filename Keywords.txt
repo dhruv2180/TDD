@@ -6,3 +6,6 @@
 	5.1 assertEquals
 	5.2 assertNotEquals
 	5.3 assertArrayEquals
+6. Red green refactor model
+7. Jacob
+8. Code coverage tools
