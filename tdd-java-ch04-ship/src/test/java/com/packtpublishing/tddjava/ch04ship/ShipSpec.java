@@ -52,7 +52,7 @@ public class ShipSpec {
     }
 
     public void whenCommandsAreReceivedThenExecuteTheCommands(){
-        
+
         Location expected=location.copy();
         expected.turnRight();
         expected.forward();

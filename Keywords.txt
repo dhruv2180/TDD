@@ -12,6 +12,7 @@
 
 ——————————————
 
+
 9.  TestNG
 	9.1 @Test (class level)
 	9.2 @BeforeSuite
@@ -34,5 +35,17 @@
 13. Acceptance tests
 14. Test doubles
 15. KISS : Keep it simple stupid
+
+——————————————
+
+16. Yagni : You ain’t gonna need it
+17. DRY   : Don’t repeat yourself
+18. Occam’s Razor
+19. SOLID
+	19.1 Single Responsibility principle
+	19.2 Open-Closed principle
+	19.3 Liskov Substitution principle
+	19.4 Interface segregation principle
+	19.5 Dependency inversion principle 
 
 	
