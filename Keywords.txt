@@ -47,5 +47,11 @@
 	19.3 Liskov Substitution principle
 	19.4 Interface segregation principle
 	19.5 Dependency inversion principle 
+20. Hamcrest
+
+——————————————
+
+21. Mocking
+22. Mockito
 
 	
