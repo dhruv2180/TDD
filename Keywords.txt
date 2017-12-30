@@ -56,5 +56,6 @@
 	22.1 mock()
 	22.2 spy()
 	22.3 verify()
+23 Java Bean
 
 	
