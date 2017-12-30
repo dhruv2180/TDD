@@ -11,11 +11,15 @@ import static  org.mockito.Mockito.*;
 public class TicTacToeCollectionSpec {
 
     TicTacToeCollection collection;
+    TicTacToeBean ticTacToeBean;
+    MongoCollection mongoCollection;
 
     @Before
     public void before() throws UnknownHostException {
 
         collection=spy(new TicTacToeCollection());
+        mongoCollection=mock(MongoCollection.class);
+        ticTacToeBean=new TicTacToeBean(3,2,1,'Y');
 
     }
     @Test
@@ -34,8 +38,6 @@ public class TicTacToeCollectionSpec {
     @Test
     public void WhenSaveMoveThenInvokeMongoCollectionSave(){
 
-        TicTacToeBean ticTacToeBean=new TicTacToeBean(3,2,1,'Y');
-        MongoCollection mongoCollection=mock(MongoCollection.class);
         doReturn(mongoCollection).when(collection).getMongoCollection();
         collection.saveMove(ticTacToeBean);
         verify(mongoCollection,times(1)).save(ticTacToeBean);
@@ -44,8 +46,6 @@ public class TicTacToeCollectionSpec {
     @Test
     public void WhenSaveMoveThenReturnTrue(){
 
-        TicTacToeBean ticTacToeBean=new TicTacToeBean(3,2,1,'Y');
-        MongoCollection mongoCollection=mock(MongoCollection.class);
         doReturn(mongoCollection).when(collection).getMongoCollection();
         assertTrue(collection.saveMove(ticTacToeBean));
 
